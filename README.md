@@ -10,7 +10,7 @@ This release contains the public IEEE-33 and IEEE-39 studies, matched classical
 baselines, grid simulations, guarded QCi Dirac-3 payloads, unchanged archived
 hardware responses, and deterministic fail-closed audits.
 
-## Judge quick start
+## Quick start
 
 1. Launch the repository on qBraid or upload and extract the submission ZIP.
 2. Open `Source_Code/RUN_ON_QBRAID.ipynb` and run every cell from top to bottom.
@@ -34,6 +34,20 @@ Dirac-3 allocation or metering. No repository credential, QCi token, qBraid
 password, paid hardware call, or other secret is required for the submitted
 credential-free reproduction.
 
+### Intellectual-property and licensing boundary
+
+The supplied implementation and evidence are limited to the files in this
+archive and are sufficient for the credential-free reproduction described
+below. Citations identify external public literature only; omitted background
+software, confidential know-how, and other unsubmitted implementation material
+are not supplied by this release.
+
+Certain subject matter in and related to this submission is disclosed in
+pending Australian provisional patent applications and their related publication ( referenced in the PDF). 
+For enquiries about a licence concerning rights not already
+granted under the competition instruments, contact <admin@pr2aid.com> or
+<azadeh.alavi@rmit.edu.au>.
+
 ## 1. Submission contents
 
 The ZIP has exactly three root entries:
@@ -47,26 +61,6 @@ The ZIP has exactly three root entries:
 The PDF is the only submitted write-up. Supporting verifier inputs are included
 under `Source_Code/`. The source is supplied for competition evaluation under
 `Source_Code/LICENSE`; no general public software licence is granted.
-
-### Intellectual-property and licensing boundary
-
-The supplied implementation and evidence are limited to the files in this
-archive and are sufficient for the credential-free reproduction described
-below. Citations identify external public literature only; omitted background
-software, confidential know-how, and other unsubmitted implementation material
-are not supplied by this release.
-
-Rights in material included in the submission are governed by the applicable
-Global Industry Challenge rules, participant agreement, and Aqora terms. This
-notice does not limit, replace, or modify those rights. Apart from those rights
-and applicable third-party licences, no additional public software or patent
-licence is granted; see `Source_Code/LICENSE`.
-
-Certain subject matter in and related to this submission is disclosed in
-pending Australian provisional patent applications; no granted patent is
-claimed. For enquiries about a separate licence concerning rights not already
-granted under the competition instruments, contact <admin@pr2aid.com> or
-<azadeh.alavi@rmit.edu.au>.
 
 ## 2. Credential-free reproduction on qBraid
 
