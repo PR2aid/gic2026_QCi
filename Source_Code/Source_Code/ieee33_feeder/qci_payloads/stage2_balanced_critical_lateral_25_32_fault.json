@@ -1,0 +1,239 @@
+{
+  "coefficient_dynamic_range_local_only": 10.142857142857142,
+  "coefficient_resolution_audit_local_only": {
+    "coefficient_spread": 10.142857142857142,
+    "max_abs_coefficient": 35500.0,
+    "min_pairwise_distinct_separation": 11449.999999999998,
+    "pairwise_distinct_separation_resolved": true,
+    "pass": true,
+    "required_min_pairwise_distinct_separation": 177.5,
+    "resolution_ratio": 200.0,
+    "spread_within_resolution": true
+  },
+  "constant_offset_local_only": 0.0,
+  "file_config": {
+    "polynomial": {
+      "data": [
+        {
+          "idx": [
+            0,
+            1
+          ],
+          "val": -14949.999999999998
+        },
+        {
+          "idx": [
+            0,
+            2
+          ],
+          "val": -3500.0
+        },
+        {
+          "idx": [
+            0,
+            3
+          ],
+          "val": -34400.0
+        },
+        {
+          "idx": [
+            0,
+            4
+          ],
+          "val": -34400.0
+        },
+        {
+          "idx": [
+            3,
+            4
+          ],
+          "val": 35500.0
+        }
+      ],
+      "max_degree": 2,
+      "min_degree": 1,
+      "num_variables": 4
+    }
+  },
+  "file_name": "stage2_balanced_critical_lateral_25_32_fault",
+  "job_params_hint": {
+    "device_type": "dirac-3",
+    "job_type": "sample-hamiltonian-integer",
+    "num_levels": [
+      2,
+      2,
+      2,
+      2
+    ]
+  },
+  "local_decoded_solution": {
+    "active_islands": [
+      {
+        "annualized_cost_usd_yr": 406400.0,
+        "buses": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "candidate": "MG_trunk_1_17",
+        "candidate_index": 0,
+        "capacity_mw_loss_derated": 1.8867924528301885,
+        "critical_load_mw": 0.0,
+        "customer_blocks": 17,
+        "load_mw": 1.505,
+        "pcc": 1,
+        "product": "2MW_8MWh_BESS_PV_HYBRID_DER",
+        "product_energy_mwh": 8.0,
+        "product_index": 1,
+        "product_power_mw": 2.0,
+        "role": "primary",
+        "service_id": "MG_trunk_1_17",
+        "unavailable_in_contingencies": [],
+        "upfront_cost_usd": 5080000.0
+      },
+      {
+        "annualized_cost_usd_yr": 222400.0,
+        "buses": [
+          18,
+          19,
+          20,
+          21
+        ],
+        "candidate": "MG_lateral_18_21",
+        "candidate_index": 1,
+        "capacity_mw_loss_derated": 0.9433962264150942,
+        "critical_load_mw": 0.0,
+        "customer_blocks": 4,
+        "load_mw": 0.36,
+        "pcc": 18,
+        "product": "1MW_4MWh_BESS_PV_HYBRID_DER",
+        "product_energy_mwh": 4.0,
+        "product_index": 0,
+        "product_power_mw": 1.0,
+        "role": "primary",
+        "service_id": "MG_lateral_18_21",
+        "unavailable_in_contingencies": [],
+        "upfront_cost_usd": 2780000.0
+      },
+      {
+        "annualized_cost_usd_yr": 241600.0,
+        "buses": [
+          22,
+          23,
+          24
+        ],
+        "candidate": "MG_blackstart_22_24",
+        "candidate_index": 4,
+        "capacity_mw_loss_derated": 0.9433962264150942,
+        "critical_load_mw": 0.84,
+        "customer_blocks": 3,
+        "load_mw": 0.93,
+        "pcc": 23,
+        "product": "1MW_4MWh_BESS_PV_HYBRID_DER",
+        "product_energy_mwh": 4.0,
+        "product_index": 0,
+        "product_power_mw": 1.0,
+        "role": "blackstart_overlap",
+        "service_id": "MG_lateral_22_24",
+        "unavailable_in_contingencies": [],
+        "upfront_cost_usd": 3020000.0
+      }
+    ],
+    "active_service_ids": [
+      "MG_lateral_18_21",
+      "MG_lateral_22_24",
+      "MG_trunk_1_17"
+    ],
+    "critical_fraction_served": 0.7999999999999999,
+    "critical_load_served_mw": 0.84,
+    "critical_unserved_mwh": 0.8400000000000003,
+    "customer_blocks_served": 24,
+    "customer_fraction_served": 0.75,
+    "load_fraction_served": 0.7523553162853297,
+    "load_fraction_unserved": 0.2476446837146703,
+    "load_served_mw": 2.795,
+    "max_customer_fraction_unserved": 0.25
+  },
+  "local_exact_ground_state": {
+    "bitstring_lsb_first": "1101",
+    "energy": -52850.0,
+    "num_states_enumerated": 16
+  },
+  "metadata": {
+    "contingency": {
+      "duration_h": 4.0,
+      "event_rate_per_year": 4.0,
+      "name": "lateral_25_32_fault"
+    },
+    "design_mode": "balanced_critical",
+    "hamiltonian": "-sum_i(value_i-regularizer)*a_i + sum_over_overlaps(M_ij*a_i*a_j); faulted candidates are structurally excluded from the variable domain",
+    "islanding_value_usd_per_event": {
+      "MG_blackstart_22_24": 34500.0,
+      "MG_lateral_18_21": 3600.0,
+      "MG_lateral_22_24": 34500.0,
+      "MG_trunk_1_17": 15049.999999999998
+    },
+    "overlap_terms": [
+      {
+        "service_id": "MG_lateral_22_24",
+        "variables": [
+          2,
+          3
+        ],
+        "weight_usd": 35500.0
+      }
+    ],
+    "stage": "stage2_contingency_islanding",
+    "structurally_excluded_unavailable_candidates": [
+      {
+        "candidate": "MG_lateral_25_32",
+        "role": "primary",
+        "service_id": "MG_lateral_25_32"
+      }
+    ],
+    "variables": [
+      {
+        "candidate": "MG_trunk_1_17",
+        "role": "primary",
+        "service_id": "MG_trunk_1_17",
+        "unavailable": false,
+        "var": 0
+      },
+      {
+        "candidate": "MG_lateral_18_21",
+        "role": "primary",
+        "service_id": "MG_lateral_18_21",
+        "unavailable": false,
+        "var": 1
+      },
+      {
+        "candidate": "MG_lateral_22_24",
+        "role": "primary",
+        "service_id": "MG_lateral_22_24",
+        "unavailable": false,
+        "var": 2
+      },
+      {
+        "candidate": "MG_blackstart_22_24",
+        "role": "blackstart_overlap",
+        "service_id": "MG_lateral_22_24",
+        "unavailable": false,
+        "var": 3
+      }
+    ]
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "job_info": {
+    "job_id": "6a61007208442f441bbb27a4",
+    "job_submission": {
+      "job_name": "qpr_phase3_smoke_single_cubic_qudit",
+      "job_tags": [
+        "GIC2026",
+        "QCI_Phase3",
+        "SMOKE_NOT_EVIDENCE",
+        "smoke_single_cubic_qudit"
+      ],
+      "problem_config": {
+        "qudit_hamiltonian_optimization": {
+          "polynomial_file_id": "6a610072ff2f309fb9d071f0"
+        }
+      },
+      "device_config": {
+        "dirac-3_qudit": {
+          "num_levels": [
+            3
+          ],
+          "num_samples": 3,
+          "relaxation_schedule": 1
+        }
+      }
+    },
+    "job_status": {
+      "submitted_at_rfc3339nano": "2026-07-22T17:40:02.417Z",
+      "queued_at_rfc3339nano": "2026-07-22T17:40:02.417Z",
+      "running_at_rfc3339nano": "2026-07-22T17:40:03.343Z",
+      "completed_at_rfc3339nano": "2026-07-22T17:40:06.403Z"
+    },
+    "job_result": {
+      "file_id": "6a610076ff2f309fb9d071f2",
+      "device_usage_s": 1
+    }
+  },
+  "status": "COMPLETED",
+  "results": {
+    "counts": [
+      3
+    ],
+    "energies": [
+      -63.796635
+    ],
+    "solutions": [
+      [
+        1
+      ]
+    ]
+  },
+  "_local_submission_record": {
+    "id": "smoke_single_cubic_qudit",
+    "job_id": "6a61007208442f441bbb27a4",
+    "submitted_utc": "2026-07-22T17:40:02.457508+00:00",
+    "protocol_sha256": "0c97a069f187aa4627458c8a59b9add1673083404cf1a496863ab8294b20a09f",
+    "evidence_class": "SMOKE_NOT_EVIDENCE",
+    "payload": "ieee33_feeder/qci_payloads/stage3b_balanced_critical_upstream_PCC_outage_MG_lateral_22_24.json",
+    "payload_sha256": "d8993d97e738a87a4e41ffaaa41cff967cb913434918af386aa72d65e6be5bee",
+    "job_type": "sample-hamiltonian-integer",
+    "job_params": {
+      "device_type": "dirac-3",
+      "num_samples": 3,
+      "relaxation_schedule": 1,
+      "num_levels": [
+        3
+      ]
+    },
+    "allocation_before": {
+      "seconds": 259200.0,
+      "metered": false
+    },
+    "remote_submission_response": {
+      "job_id": "6a61007208442f441bbb27a4"
+    },
+    "collected_utc": "2026-07-22T17:40:13.421265+00:00",
+    "allocation_after": {
+      "seconds": 259200.0,
+      "metered": false
+    },
+    "wait_timed_out": false
+  }
+}

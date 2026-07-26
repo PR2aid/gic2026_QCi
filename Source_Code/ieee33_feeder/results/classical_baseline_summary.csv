@@ -1,0 +1,28 @@
+payload,stage,variables,rank,terms,domain,state_space,exact_energy,exact_median_runtime_ms_10_repeats,sa_seeds,sa_evaluations_per_seed,sa_success_rate,sa_mean_gap,sa_max_gap,sa_median_runtime_ms
+stage1_balanced_critical_design.json,stage1_microgrid_design,11,2,16,binary,2048,1441200.0,4.4554529995366465,30,25,0.0,515946.6666666667,1867200.0,0.27108699941891246
+stage1_cost_efficient_design.json,stage1_microgrid_design,7,2,10,binary,128,1073600.0,0.19549449643818662,30,25,0.13333333333333333,282133.3333333333,552000.0,0.24060200303210877
+stage1_robust_critical_design.json,stage1_microgrid_design,11,2,16,binary,2048,1556800.0,4.688797998824157,30,25,0.0,554460.0,1940600.0,0.27200299882679246
+stage2_balanced_critical_compound_two_lateral_fault.json,stage2_contingency_islanding,3,2,3,binary,8,-52850.0,0.007746504707029089,30,25,1.0,0.0,0.0,0.20545900042634457
+stage2_balanced_critical_lateral_22_24_fault.json,stage2_contingency_islanding,4,2,4,binary,16,-68250.0,0.015577996236970648,30,25,1.0,0.0,0.0,0.21281999943312258
+stage2_balanced_critical_lateral_25_32_fault.json,stage2_contingency_islanding,4,2,5,binary,16,-52850.0,0.017225502233486623,30,25,1.0,0.0,0.0,0.2140219949069433
+stage2_balanced_critical_upstream_PCC_outage.json,stage2_contingency_islanding,5,2,6,binary,32,-68250.0,0.03615400055423379,30,25,1.0,0.0,0.0,0.2207569959864486
+stage2_cost_efficient_compound_two_lateral_fault.json,stage2_contingency_islanding,2,2,2,binary,4,-18450.0,0.004271001671440899,30,25,1.0,0.0,0.0,0.1998610023292713
+stage2_cost_efficient_lateral_22_24_fault.json,stage2_contingency_islanding,3,2,3,binary,8,-33850.0,0.007661499694222584,30,25,1.0,0.0,0.0,0.20754249635501765
+stage2_cost_efficient_lateral_25_32_fault.json,stage2_contingency_islanding,3,2,3,binary,8,-52850.0,0.007696500688325614,30,25,1.0,0.0,0.0,0.20725700233015232
+stage2_cost_efficient_upstream_PCC_outage.json,stage2_contingency_islanding,4,2,4,binary,16,-68250.0,0.01535749834147282,30,25,1.0,0.0,0.0,0.21026150352554396
+stage2_robust_critical_compound_two_lateral_fault.json,stage2_contingency_islanding,4,2,4,binary,16,-68250.0,0.011125997843919322,30,25,1.0,0.0,0.0,0.13182049951865338
+stage2_robust_critical_lateral_22_24_fault.json,stage2_contingency_islanding,5,2,6,binary,32,-68250.0,0.026319499738747254,30,25,0.9666666666666667,116.66666666666667,3500.0,0.2070614973490592
+stage2_robust_critical_lateral_25_32_fault.json,stage2_contingency_islanding,5,2,6,binary,32,-68250.0,0.03288799780420959,30,25,1.0,0.0,0.0,0.14643200120190158
+stage2_robust_critical_upstream_PCC_outage.json,stage2_contingency_islanding,6,2,8,binary,64,-68250.0,0.06934299744898453,30,25,1.0,0.0,0.0,0.18503899991628714
+stage3b_balanced_critical_lateral_25_32_fault_MG_lateral_22_24.json,stage3b_exact_balance_qudit_cubic,1,3,3,integer levels=[3],3,386.78191599999997,0.003094501153100282,30,25,1.0,0.0,0.0,0.15489950237679295
+stage3b_balanced_critical_upstream_PCC_outage_MG_lateral_22_24.json,stage3b_exact_balance_qudit_cubic,1,3,3,integer levels=[3],3,386.78191599999997,0.003019496944034472,30,25,1.0,0.0,0.0,0.13495449820766225
+stage3b_robust_critical_lateral_22_24_fault_MG_lateral_25_32.json,stage3b_exact_balance_qudit_cubic,1,3,3,integer levels=[3],3,381.26457362962964,0.0030344999686349183,30,25,1.0,0.0,0.0,0.18407699826639146
+stage3b_robust_critical_lateral_25_32_fault_MG_lateral_22_24.json,stage3b_exact_balance_qudit_cubic,1,3,3,integer levels=[3],3,386.78191599999997,0.0029340008040890098,30,25,1.0,0.0,0.0,0.1232624999829568
+stage3b_robust_critical_upstream_PCC_outage_MG_lateral_22_24.json,stage3b_exact_balance_qudit_cubic,1,3,3,integer levels=[3],3,386.78191599999997,0.0029544971766881645,30,25,1.0,0.0,0.0,0.2009880008699838
+stage3b_robust_critical_upstream_PCC_outage_MG_lateral_25_32.json,stage3b_exact_balance_qudit_cubic,1,3,3,integer levels=[3],3,381.26457362962964,0.0029540024115704,30,25,1.0,0.0,0.0,0.1225769956363365
+stage3s_balanced_critical_lateral_25_32_fault_MG_lateral_22_24.json,stage3s_sumconstraint_cubic,2,3,6,continuous simplex sum=1.0,continuous,386.7663857047915,0.0932180009840522,30,25,0.7,0.49339284199045136,3.360463650325187,0.0592125034017954
+stage3s_balanced_critical_upstream_PCC_outage_MG_lateral_22_24.json,stage3s_sumconstraint_cubic,2,3,6,continuous simplex sum=1.0,continuous,386.7663857047915,0.13310199938132428,30,25,0.7,0.49339284199045136,3.360463650325187,0.04811599865206517
+stage3s_robust_critical_lateral_22_24_fault_MG_lateral_25_32.json,stage3s_sumconstraint_cubic,2,3,6,continuous simplex sum=1.0,continuous,381.23876742634684,0.09451000005356036,30,25,0.6333333333333333,0.4928735066641347,3.141111684766827,0.03773099888348952
+stage3s_robust_critical_lateral_25_32_fault_MG_lateral_22_24.json,stage3s_sumconstraint_cubic,2,3,6,continuous simplex sum=1.0,continuous,386.7663857047915,0.11339800039422698,30,25,0.7,0.49339284199045136,3.360463650325187,0.06189199848449789
+stage3s_robust_critical_upstream_PCC_outage_MG_lateral_22_24.json,stage3s_sumconstraint_cubic,2,3,6,continuous simplex sum=1.0,continuous,386.7663857047915,0.09278250217903405,30,25,0.7,0.49339284199045136,3.360463650325187,0.037640500522684306
+stage3s_robust_critical_upstream_PCC_outage_MG_lateral_25_32.json,stage3s_sumconstraint_cubic,2,3,6,continuous simplex sum=1.0,continuous,381.23876742634684,0.095777002570685,30,25,0.6333333333333333,0.4928735066641347,3.141111684766827,0.03757049853447825

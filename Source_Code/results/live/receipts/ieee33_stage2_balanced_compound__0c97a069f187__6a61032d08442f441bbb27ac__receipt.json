@@ -1,0 +1,27 @@
+{
+  "id": "ieee33_stage2_balanced_compound",
+  "job_id": "6a61032d08442f441bbb27ac",
+  "submitted_utc": "2026-07-22T17:51:41.426933+00:00",
+  "protocol_sha256": "0c97a069f187aa4627458c8a59b9add1673083404cf1a496863ab8294b20a09f",
+  "evidence_class": "REGISTERED_EVIDENCE",
+  "payload": "ieee33_feeder/qci_payloads/stage2_balanced_critical_compound_two_lateral_fault.json",
+  "payload_sha256": "1866cb577bc7154eabebaa9eb3dee35853ad82929fffa86402efa5cc20aea721",
+  "job_type": "sample-hamiltonian-integer",
+  "job_params": {
+    "device_type": "dirac-3",
+    "num_samples": 25,
+    "relaxation_schedule": 1,
+    "num_levels": [
+      2,
+      2,
+      2
+    ]
+  },
+  "allocation_before": {
+    "seconds": 259200.0,
+    "metered": false
+  },
+  "remote_submission_response": {
+    "job_id": "6a61032d08442f441bbb27ac"
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "coefficient_dynamic_range_local_only": 6.102182654385221,
+  "coefficient_resolution_audit_local_only": {
+    "coefficient_spread": 6.102182654385221,
+    "max_abs_coefficient": 353.40000000000003,
+    "min_pairwise_distinct_separation": 22.521996,
+    "pairwise_distinct_separation_resolved": true,
+    "pass": true,
+    "required_min_pairwise_distinct_separation": 1.7670000000000001,
+    "resolution_ratio": 200.0,
+    "spread_within_resolution": true
+  },
+  "constant_offset_local_only": 0.0,
+  "file_config": {
+    "polynomial": {
+      "data": [
+        {
+          "idx": [
+            0,
+            0,
+            1
+          ],
+          "val": 241.8
+        },
+        {
+          "idx": [
+            0,
+            0,
+            2
+          ],
+          "val": 353.40000000000003
+        },
+        {
+          "idx": [
+            0,
+            1,
+            1
+          ],
+          "val": 145.30320000000003
+        },
+        {
+          "idx": [
+            0,
+            2,
+            2
+          ],
+          "val": 207.57600000000002
+        },
+        {
+          "idx": [
+            1,
+            1,
+            1
+          ],
+          "val": 57.91370400000001
+        },
+        {
+          "idx": [
+            2,
+            2,
+            2
+          ],
+          "val": 80.43570000000001
+        }
+      ],
+      "max_degree": 3,
+      "min_degree": 1,
+      "num_variables": 2
+    }
+  },
+  "file_name": "stage3s_robust_critical_upstream_PCC_outage_MG_lateral_22_24",
+  "job_params_hint": {
+    "device_type": "dirac-3",
+    "job_type": "sample-hamiltonian",
+    "sum_constraint": 1.0
+  },
+  "local_decoded_solution": {
+    "all_units_within_capacity": true,
+    "balance_residual_mw": 0.0,
+    "dispatch_by_unit": {
+      "MG_blackstart_22_24": {
+        "dispatch_mw": 0.30505318410782645,
+        "share_of_load": 0.3280141764600284,
+        "unit_kind": "blackstart_bess_pv_overlay",
+        "within_capacity": true
+      },
+      "MG_lateral_22_24": {
+        "dispatch_mw": 0.6249468158921736,
+        "share_of_load": 0.6719858235399716,
+        "unit_kind": "primary_bess_pv_hybrid_der",
+        "within_capacity": true
+      }
+    },
+    "pocket_load_mw": 0.93,
+    "total_dispatch_mw": 0.93
+  },
+  "local_exact_ground_state": {
+    "energy": 386.7663857047915,
+    "solution": [
+      0.6719858235399716,
+      0.3280141764600284
+    ],
+    "solver": "golden_section_1d"
+  },
+  "metadata": {
+    "coefficient_resolution_audit": {
+      "coefficient_spread": 6.102182654385221,
+      "max_abs_coefficient": 353.40000000000003,
+      "min_pairwise_distinct_separation": 22.521996,
+      "pairwise_distinct_separation_resolved": true,
+      "pass": true,
+      "required_min_pairwise_distinct_separation": 1.7670000000000001,
+      "resolution_ratio": 200.0,
+      "spread_within_resolution": true
+    },
+    "contingency": {
+      "duration_h": 4.0,
+      "event_rate_per_year": 12.0,
+      "name": "upstream_PCC_outage"
+    },
+    "design_mode": "robust_critical",
+    "recommended_for_hardware": true,
+    "service_id": "MG_lateral_22_24",
+    "stage": "stage3s_sumconstraint_cubic",
+    "sum_constraint": 1.0,
+    "variables": [
+      {
+        "candidate": "MG_lateral_22_24",
+        "capacity_mw": 0.9433962264150942,
+        "pocket_load_mw": 0.93,
+        "service_id": "MG_lateral_22_24",
+        "unit_kind": "primary_bess_pv_hybrid_der",
+        "var": 0
+      },
+      {
+        "candidate": "MG_blackstart_22_24",
+        "capacity_mw": 0.9433962264150942,
+        "pocket_load_mw": 0.93,
+        "service_id": "MG_lateral_22_24",
+        "unit_kind": "blackstart_bess_pv_overlay",
+        "var": 1
+      }
+    ]
+  }
+}

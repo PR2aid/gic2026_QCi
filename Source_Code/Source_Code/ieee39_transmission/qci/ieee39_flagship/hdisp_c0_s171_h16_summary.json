@@ -1,0 +1,58 @@
+{
+  "problem_name": "hdisp_c0_s171_h16",
+  "num_variables": 3,
+  "num_polynomial_terms": 4,
+  "degree": 2,
+  "constant_offset": 0.0,
+  "sum_constraint": 10.0,
+  "encoding": "continuous",
+  "job_params": {
+    "sum_constraint": 10.0,
+    "relaxation_schedule": 1,
+    "num_samples": 25
+  },
+  "within_135_variable_rank3_budget": true,
+  "device_spec_lint": {
+    "ok": true,
+    "errors": [],
+    "warnings": [],
+    "stats": {
+      "num_variables": 3,
+      "degree": 2,
+      "n_terms": 4,
+      "encoding": "continuous",
+      "coeff_ratio": 15.726439318932565,
+      "coefficient_spread": 15.726439318932565,
+      "min_distinct_separation": 993.3942824134756,
+      "required_min_separation": 154.69702000483605,
+      "spread_within_resolution": true,
+      "pairwise_distinct_separation_resolved": true,
+      "coefficient_resolution_pass": true
+    }
+  },
+  "var_names": [
+    "p_mt",
+    "p_lg",
+    "s_shed"
+  ],
+  "scales_mw": [
+    198.67885648269493,
+    198.67885648269493,
+    198.67885648269493
+  ],
+  "meta": {
+    "kind": "hourly_dispatch",
+    "encoding": "continuous",
+    "cid": 0,
+    "sid": 171,
+    "hour": 16,
+    "u_mw_per_unit": 198.67885648269493,
+    "net_load_mw": 1986.7885648269494,
+    "service_reward_K": 210.72570000000002,
+    "caps_mw": {
+      "p_mt": 1512.0950000000003,
+      "p_lg": 550.0
+    },
+    "note": "simplex = exact hourly balance; K = device-side VoLL surrogate; quadratic walls encode caps; cubic fuel curvature restored classically"
+  }
+}

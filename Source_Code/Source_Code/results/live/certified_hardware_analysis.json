@@ -1,0 +1,166 @@
+{
+  "analysis_version": "qpr_qci_phase3_window_kkt_and_timing_v2",
+  "certification_pass": true,
+  "evidence_class": "POST_RUN_DETERMINISTIC_ANALYSIS_OF_FROZEN_EVIDENCE",
+  "execution_timing": {
+    "all_campaign_device_usage_s_sum": 320.0,
+    "all_job_submit_to_collect_wall_s_sum": 421.80649700000004,
+    "campaign_elapsed_wall_s": 427.613396,
+    "campaign_first_submitted_utc": "2026-07-22T17:45:28.024198+00:00",
+    "campaign_last_collected_utc": "2026-07-22T17:52:35.637594+00:00",
+    "definition": "Wall intervals are derived from immutable client UTC receipt timestamps and include API, queue, and polling time; device seconds are the QCi-reported usage field.",
+    "per_job": [
+      {
+        "collected_utc": "2026-07-22T17:45:38.963811+00:00",
+        "device_usage_s": 4.0,
+        "evidence_class": "REGISTERED_EVIDENCE",
+        "run_id": "ieee39_hour_h16",
+        "submit_to_collect_wall_s": 10.939613,
+        "submitted_utc": "2026-07-22T17:45:28.024198+00:00"
+      },
+      {
+        "collected_utc": "2026-07-22T17:45:50.316050+00:00",
+        "device_usage_s": 5.0,
+        "evidence_class": "REGISTERED_EVIDENCE",
+        "run_id": "ieee39_hour_h17",
+        "submit_to_collect_wall_s": 10.783308,
+        "submitted_utc": "2026-07-22T17:45:39.532742+00:00"
+      },
+      {
+        "collected_utc": "2026-07-22T17:46:01.798625+00:00",
+        "device_usage_s": 5.0,
+        "evidence_class": "REGISTERED_EVIDENCE",
+        "run_id": "ieee39_hour_h18",
+        "submit_to_collect_wall_s": 10.933147,
+        "submitted_utc": "2026-07-22T17:45:50.865478+00:00"
+      },
+      {
+        "collected_utc": "2026-07-22T17:46:13.135609+00:00",
+        "device_usage_s": 5.0,
+        "evidence_class": "REGISTERED_EVIDENCE",
+        "run_id": "ieee39_hour_h19",
+        "submit_to_collect_wall_s": 10.787068,
+        "submitted_utc": "2026-07-22T17:46:02.348541+00:00"
+      },
+      {
+        "collected_utc": "2026-07-22T17:46:34.695714+00:00",
+        "device_usage_s": 9.0,
+        "evidence_class": "REGISTERED_EVIDENCE",
+        "run_id": "ieee39_window_h16_h19",
+        "submit_to_collect_wall_s": 21.011941,
+        "submitted_utc": "2026-07-22T17:46:13.683773+00:00"
+      },
+      {
+        "collected_utc": "2026-07-22T17:51:18.952751+00:00",
+        "device_usage_s": 274.0,
+        "evidence_class": "CHARACTERIZATION_OUTSIDE_COEFFICIENT_GUIDANCE",
+        "run_id": "ieee39_cubic_resolution_probe",
+        "submit_to_collect_wall_s": 283.476063,
+        "submitted_utc": "2026-07-22T17:46:35.476688+00:00"
+      },
+      {
+        "collected_utc": "2026-07-22T17:51:40.642965+00:00",
+        "device_usage_s": 6.0,
+        "evidence_class": "REGISTERED_EVIDENCE",
+        "run_id": "ieee33_stage1_balanced",
+        "submit_to_collect_wall_s": 20.876151,
+        "submitted_utc": "2026-07-22T17:51:19.766814+00:00"
+      },
+      {
+        "collected_utc": "2026-07-22T17:52:02.530933+00:00",
+        "device_usage_s": 4.0,
+        "evidence_class": "REGISTERED_EVIDENCE",
+        "run_id": "ieee33_stage2_balanced_compound",
+        "submit_to_collect_wall_s": 21.104,
+        "submitted_utc": "2026-07-22T17:51:41.426933+00:00"
+      },
+      {
+        "collected_utc": "2026-07-22T17:52:24.178608+00:00",
+        "device_usage_s": 4.0,
+        "evidence_class": "REGISTERED_EVIDENCE",
+        "run_id": "ieee33_stage3b_balanced_cubic",
+        "submit_to_collect_wall_s": 21.097182,
+        "submitted_utc": "2026-07-22T17:52:03.081426+00:00"
+      },
+      {
+        "collected_utc": "2026-07-22T17:52:35.637594+00:00",
+        "device_usage_s": 4.0,
+        "evidence_class": "REGISTERED_EVIDENCE",
+        "run_id": "ieee33_stage3s_balanced_continuous",
+        "submit_to_collect_wall_s": 10.798024,
+        "submitted_utc": "2026-07-22T17:52:24.839570+00:00"
+      }
+    ],
+    "registered_evidence_device_usage_s_sum": 46.0,
+    "registered_evidence_submit_to_collect_wall_s_sum": 138.330434
+  },
+  "hardware": {
+    "absolute_gap": 7832.728605503915,
+    "all_raw_states_feasible": true,
+    "best_energy": -746220.6550384088,
+    "counted_samples": 25,
+    "device_usage_s": 9,
+    "energy_quantiles_q0_q25_q50_q75_q100": [
+      -746220.6550384088,
+      -739646.851039012,
+      -736117.3163018489,
+      -733030.4958099235,
+      -722705.8937931504
+    ],
+    "maximum_simplex_residual": 4.799999999249849e-06,
+    "relative_gap": 0.010387498783776787,
+    "relative_gap_quantiles_q0_q25_q50_q75_q100": [
+      0.010387498783776787,
+      0.01910545449087724,
+      0.023786203644348133,
+      0.02787984019433415,
+      0.041571976906035014
+    ],
+    "returned_unique_states": 25
+  },
+  "job_id": "6a6101e508442f441bbb27a9",
+  "method": "Analytic KKT/water-filling solution of the identical separable convex quadratic over the registered non-negative simplex",
+  "oracle": {
+    "energy": -754053.3836439127,
+    "lagrange_multiplier": 6398.339494049213,
+    "max_active_stationarity_residual": 5.4569682106375694e-12,
+    "min_inactive_reduced_cost": 6398.339494049213,
+    "simplex_residual": 7.105427357601002e-15,
+    "x_device_units": [
+      5.729157388014103,
+      2.1007619981188665,
+      2.1700806138670314,
+      5.729157388014103,
+      2.1007619981188665,
+      2.1700806138670314,
+      5.729157388014103,
+      2.1007619981188665,
+      2.1700806138670314,
+      5.729157388014103,
+      2.1007619981188665,
+      2.1700806138670314,
+      0.0
+    ]
+  },
+  "payload": "ieee39_transmission/qci/ieee39_flagship/wdisp_c0_s171_w16_polynomial.json",
+  "payload_sha256": "d6337b990fa4db83ddfa53264031644f2051d8384ead92ba4d4c4149f2c3a02c",
+  "proof_conditions": {
+    "degree": 2,
+    "minimum_quadratic_coefficient": 0.0,
+    "num_variables": 13,
+    "separable": true,
+    "strictly_convex_coordinate_count": 12,
+    "sum_constraint": 40.0,
+    "zero_curvature_coordinate_count": 1
+  },
+  "protocol_sha256": "0c97a069f187aa4627458c8a59b9add1673083404cf1a496863ab8294b20a09f",
+  "raw_result": "results/live/evidence/ieee39_window_h16_h19__0c97a069f187__6a6101e508442f441bbb27a9__result.json",
+  "raw_result_sha256": "f52590a1cceadebb19f68eb2b8f4db638bc47705f4339f4f244a587e005ee81e",
+  "run_id": "ieee39_window_h16_h19",
+  "superseded_nonconverged_slsqp_diagnostic": {
+    "reason_not_used": "The stored pre-run SLSQP record is marked non-converged; its rounded vector is not exactly on the simplex.",
+    "rounded_vector_sum": 40.000046,
+    "stored_converged": false,
+    "stored_energy": -754053.6755224945
+  }
+}

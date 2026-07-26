@@ -1,0 +1,25 @@
+{
+  "id": "smoke_single_cubic_qudit",
+  "job_id": "6a61007208442f441bbb27a4",
+  "submitted_utc": "2026-07-22T17:40:02.457508+00:00",
+  "protocol_sha256": "0c97a069f187aa4627458c8a59b9add1673083404cf1a496863ab8294b20a09f",
+  "evidence_class": "SMOKE_NOT_EVIDENCE",
+  "payload": "ieee33_feeder/qci_payloads/stage3b_balanced_critical_upstream_PCC_outage_MG_lateral_22_24.json",
+  "payload_sha256": "d8993d97e738a87a4e41ffaaa41cff967cb913434918af386aa72d65e6be5bee",
+  "job_type": "sample-hamiltonian-integer",
+  "job_params": {
+    "device_type": "dirac-3",
+    "num_samples": 3,
+    "relaxation_schedule": 1,
+    "num_levels": [
+      3
+    ]
+  },
+  "allocation_before": {
+    "seconds": 259200.0,
+    "metered": false
+  },
+  "remote_submission_response": {
+    "job_id": "6a61007208442f441bbb27a4"
+  }
+}

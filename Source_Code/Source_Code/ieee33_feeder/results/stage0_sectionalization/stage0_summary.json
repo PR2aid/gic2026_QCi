@@ -1,0 +1,358 @@
+{
+  "method": "exact dynamic program over all connected partitions of the 32-load-bus radial feeder tree; admissibility: section load * (1 + rho) <= loss-derated product capacity; cost: cheapest admissible product + one switching upgrade per section. The policy frontier additionally enforces two disclosed operational policies: P1 dedicated critical islands (critical laterals B and C are their own islands) and P2 lateral-head switching only (standard recloser locations, no mid-trunk sectionalizing).",
+  "rho_grid": "0 to 12.00% in 0.01 percentage-point steps",
+  "plateaus": [
+    {
+      "rho_from": 0.0,
+      "rho_to": 0.0116,
+      "unconstrained_optimal_upfront_cost_usd": 10640000.0,
+      "unconstrained_num_sections": 3,
+      "unconstrained_sections": [
+        [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        [
+          22,
+          23,
+          24
+        ],
+        [
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32
+        ]
+      ],
+      "unconstrained_section_loads_mw": [
+        1.865,
+        0.93,
+        0.92
+      ],
+      "unconstrained_min_headroom_fraction": 0.011685,
+      "policy_optimal_upfront_cost_usd": 10640000.0,
+      "policy_optimal_structure": "three_sections_TA_B_C",
+      "policy_num_sections": 3,
+      "price_of_policy_usd": 0.0,
+      "feasible": true
+    },
+    {
+      "rho_from": 0.0117,
+      "rho_to": 0.0144,
+      "unconstrained_optimal_upfront_cost_usd": 12940000.0,
+      "unconstrained_num_sections": 3,
+      "unconstrained_sections": [
+        [
+          1,
+          2,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24
+        ],
+        [
+          3,
+          4,
+          5,
+          6,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32
+        ],
+        [
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ]
+      ],
+      "unconstrained_section_loads_mw": [
+        1.48,
+        1.36,
+        0.875
+      ],
+      "unconstrained_min_headroom_fraction": 0.078167,
+      "policy_optimal_upfront_cost_usd": 13420000.0,
+      "policy_optimal_structure": "four_sections_T_A_B_C",
+      "policy_num_sections": 4,
+      "price_of_policy_usd": 480000.0,
+      "feasible": true
+    },
+    {
+      "rho_from": 0.0145,
+      "rho_to": 0.0254,
+      "unconstrained_optimal_upfront_cost_usd": 12940000.0,
+      "unconstrained_num_sections": 3,
+      "unconstrained_sections": [
+        [
+          1,
+          2,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24
+        ],
+        [
+          3,
+          4,
+          5,
+          6,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32
+        ],
+        [
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ]
+      ],
+      "unconstrained_section_loads_mw": [
+        1.48,
+        1.36,
+        0.875
+      ],
+      "unconstrained_min_headroom_fraction": 0.078167,
+      "policy_optimal_upfront_cost_usd": 15720000.0,
+      "policy_optimal_structure": "four_sections_T_A_B_C",
+      "policy_num_sections": 4,
+      "price_of_policy_usd": 2780000.0,
+      "feasible": true
+    },
+    {
+      "rho_from": 0.0255,
+      "rho_to": 0.12,
+      "unconstrained_optimal_upfront_cost_usd": 12940000.0,
+      "unconstrained_num_sections": 3,
+      "unconstrained_sections": [
+        [
+          1,
+          2,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24
+        ],
+        [
+          3,
+          4,
+          5,
+          6,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32
+        ],
+        [
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ]
+      ],
+      "unconstrained_section_loads_mw": [
+        1.48,
+        1.36,
+        0.875
+      ],
+      "unconstrained_min_headroom_fraction": 0.078167,
+      "policy_optimal_upfront_cost_usd": 18020000.0,
+      "policy_optimal_structure": "four_sections_T_A_B_C",
+      "policy_num_sections": 4,
+      "price_of_policy_usd": 5080000.0,
+      "feasible": true
+    }
+  ],
+  "zero_margin_unconstrained_optimum": {
+    "upfront_cost_usd": 10640000.0,
+    "num_sections": 3,
+    "sections": [
+      [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      [
+        22,
+        23,
+        24
+      ],
+      [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ]
+    ],
+    "min_headroom_fraction": 0.011685
+  },
+  "submitted_plan_A": {
+    "sections": [
+      [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      [
+        18,
+        19,
+        20,
+        21
+      ],
+      [
+        22,
+        23,
+        24
+      ],
+      [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ]
+    ],
+    "upfront_cost_usd": 13420000.0,
+    "policy_optimality_band_rho": [
+      0.0117,
+      0.0144
+    ],
+    "analytic_policy_optimality_interval_rho": {
+      "lower_open": 0.0116849613030503,
+      "upper_closed": 0.014404544532359287,
+      "interval_notation": "(lower_open, upper_closed]"
+    },
+    "policies": [
+      "P1 dedicated critical islands",
+      "P2 lateral-head switching only"
+    ]
+  },
+  "breakeven_critical_risk_valuations": [
+    {
+      "backup": "MG_blackstart_22_24",
+      "service_id": "MG_lateral_22_24",
+      "annualized_cost_usd_yr": 241600.0,
+      "expected_critical_mwh_at_risk_per_year": 16.8,
+      "breakeven_risk_value_usd_per_mwh": 14380.95,
+      "selected_in_balanced_plan_beta_30000": true,
+      "selected_in_robust_plan_beta_75000": true
+    },
+    {
+      "backup": "MG_blackstart_25_32",
+      "service_id": "MG_lateral_25_32",
+      "annualized_cost_usd_yr": 241600.0,
+      "expected_critical_mwh_at_risk_per_year": 4.2,
+      "breakeven_risk_value_usd_per_mwh": 57523.81,
+      "selected_in_balanced_plan_beta_30000": false,
+      "selected_in_robust_plan_beta_75000": true
+    }
+  ],
+  "note": "Stage-0 is classical, exact pre-analysis for challenge stage 1a. The Stage-1 Hamiltonian optimizes product selection on the identified candidates. The unconstrained frontier is a lower bound that prices the operational policies; it is not a recommended build plan."
+}

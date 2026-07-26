@@ -1,0 +1,23 @@
+{
+  "id": "ieee39_cubic_resolution_probe",
+  "job_id": "6a6101fb08442f441bbb27aa",
+  "submitted_utc": "2026-07-22T17:46:35.476688+00:00",
+  "protocol_sha256": "0c97a069f187aa4627458c8a59b9add1673083404cf1a496863ab8294b20a09f",
+  "evidence_class": "CHARACTERIZATION_OUTSIDE_COEFFICIENT_GUIDANCE",
+  "payload": "ieee39_transmission/qci/ieee39_flagship/dispatch_c0_s171_polynomial.json",
+  "payload_sha256": "165a407284da2e6b0740f88029a89999064d2d26f64454a28b5c57891397f1be",
+  "job_type": "sample-hamiltonian",
+  "job_params": {
+    "device_type": "dirac-3",
+    "num_samples": 25,
+    "relaxation_schedule": 1,
+    "sum_constraint": 121.0
+  },
+  "allocation_before": {
+    "seconds": 259200.0,
+    "metered": false
+  },
+  "remote_submission_response": {
+    "job_id": "6a6101fb08442f441bbb27aa"
+  }
+}

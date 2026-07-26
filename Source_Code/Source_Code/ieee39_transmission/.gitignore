@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.env
+.venv/
+results/qci_runs/
+qci/**/qci_response*.json
+*_qci_response.json

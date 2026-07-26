@@ -1,0 +1,14 @@
+# Reproducibility environment used for the Phase 3 local audit.
+# Python 3.11 and 3.12 are supported; exact pins prevent the silent
+# PYPOWER-to-synthetic fallback observed with incompatible resolver choices.
+numpy==1.26.4
+scipy==1.14.1
+pandas==2.2.3
+pypower==5.1.19
+qci-client==4.5.0
+pypdf==5.1.0
+
+# Document rebuild/inspection tools are not needed for the scientific run:
+# python-docx==1.2.0
+# matplotlib==3.9.2
+# pypdf==5.1.0

@@ -1,0 +1,103 @@
+{
+  "problem_name": "islanding_selection",
+  "num_variables": 14,
+  "num_polynomial_terms": 56,
+  "degree": 2,
+  "constant_offset": 0.0,
+  "sum_constraint": 14.0,
+  "encoding": "integer",
+  "job_params": {
+    "relaxation_schedule": 1,
+    "num_samples": 25,
+    "num_levels": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ]
+  },
+  "within_135_variable_rank3_budget": true,
+  "device_spec_lint": {
+    "ok": true,
+    "errors": [],
+    "warnings": [
+      "minimum distinct-coefficient separation 0.000243154 is below the published max(|c|)/200 threshold 0.00977892"
+    ],
+    "stats": {
+      "num_variables": 14,
+      "degree": 2,
+      "n_terms": 56,
+      "encoding": "integer",
+      "coeff_ratio": 7.823139569164713,
+      "coefficient_spread": 7.823139569164713,
+      "min_distinct_separation": 0.00024315377196071353,
+      "required_min_separation": 0.00977892446145589,
+      "spread_within_resolution": true,
+      "pairwise_distinct_separation_resolved": false,
+      "coefficient_resolution_pass": false
+    }
+  },
+  "var_names": [
+    "y[0]",
+    "y[1]",
+    "y[2]",
+    "y[3]",
+    "y[4]",
+    "y[5]",
+    "y[6]",
+    "y[7]",
+    "y[8]",
+    "y[9]",
+    "y[10]",
+    "y[11]",
+    "y[12]",
+    "y[13]"
+  ],
+  "scales_mw": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "meta": {
+    "kind": "selection",
+    "encoding": "integer",
+    "num_levels": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "cost_scale": 24151605.721266363
+  }
+}

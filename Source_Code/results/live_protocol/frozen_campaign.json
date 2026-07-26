@@ -1,0 +1,292 @@
+{
+  "protocol_version": "qpr_qci_phase3_v7_budget3000_250samples",
+  "challenge": "GIC 2026 QCi - Cost Optimization in Resilient Power Grids",
+  "device": "QCi Dirac-3 via qBraid",
+  "schedule": 1,
+  "samples_per_job": 25,
+  "planned_jobs": 10,
+  "planned_returned_samples": 250,
+  "registered_evidence_jobs": 9,
+  "characterization_jobs": 1,
+  "smoke": {
+    "jobs": 1,
+    "samples": 3,
+    "evidence_class": "SMOKE_NOT_EVIDENCE"
+  },
+  "allocation_rule": "Query allocations.dirac.seconds before every job; stop if a metered balance is at or below the user-selected reserve. Credits are not treated as shots or converted to seconds.",
+  "scoring_rule": "Use raw returned vectors; reject infeasible vectors; locally re-evaluate float64 polynomial energy with the omitted constant restored; never use a repaired vector to create a pass.",
+  "no_retry_rule": "Every receipt/result/error is immutable. A failed or timed-out attempt is retained and is not resubmitted automatically.",
+  "runner_and_scorer_sha256": "e279b7a1655ed624f251e0592c12afc78b89a7b63a8f7bf1629d43681cbadd0f",
+  "requirements_sha256": "2f8789aa5994bf954b0e3489041568f200889dff5d1e685236ff09d6d72ad4df",
+  "jobs": [
+    {
+      "id": "ieee39_hour_h16",
+      "group": "IEEE39 hourly h16-h19",
+      "evidence_class": "REGISTERED_EVIDENCE",
+      "payload": "ieee39_transmission/qci/ieee39_flagship/hdisp_c0_s171_h16_polynomial.json",
+      "payload_sha256": "25490ce4b1eedaa11e5452aa6597aa3dd3b18a370fb8b5a42730f81243dcc58a",
+      "job_type": "sample-hamiltonian",
+      "job_params": {
+        "device_type": "dirac-3",
+        "num_samples": 25,
+        "relaxation_schedule": 1,
+        "sum_constraint": 10.0
+      },
+      "num_variables": 3,
+      "degree": 2,
+      "constant_offset_local_only": 0.0,
+      "classical_reference_energy": -156571.30720286292,
+      "coefficient_resolution_audit": {
+        "pass": true,
+        "coefficient_spread": 15.726439318932565,
+        "max_abs_coefficient": 30939.40400096721,
+        "min_pairwise_distinct_separation": 993.3942824134756,
+        "required_min_pairwise_distinct_separation": 154.69702000483605
+      }
+    },
+    {
+      "id": "ieee39_hour_h17",
+      "group": "IEEE39 hourly h16-h19",
+      "evidence_class": "REGISTERED_EVIDENCE",
+      "payload": "ieee39_transmission/qci/ieee39_flagship/hdisp_c0_s171_h17_polynomial.json",
+      "payload_sha256": "24ffad3648394d9e7976efbb52ce75741b626af84ac37da35dd2d3133be8337a",
+      "job_type": "sample-hamiltonian",
+      "job_params": {
+        "device_type": "dirac-3",
+        "num_samples": 25,
+        "relaxation_schedule": 1,
+        "sum_constraint": 10.0
+      },
+      "num_variables": 4,
+      "degree": 2,
+      "constant_offset_local_only": 0.0,
+      "classical_reference_energy": -168082.17921186014,
+      "coefficient_resolution_audit": {
+        "pass": true,
+        "coefficient_spread": 14.019846844797042,
+        "max_abs_coefficient": 34705.56169204671,
+        "min_pairwise_distinct_separation": 1114.317087418669,
+        "required_min_pairwise_distinct_separation": 173.52780846023353
+      }
+    },
+    {
+      "id": "ieee39_hour_h18",
+      "group": "IEEE39 hourly h16-h19",
+      "evidence_class": "REGISTERED_EVIDENCE",
+      "payload": "ieee39_transmission/qci/ieee39_flagship/hdisp_c0_s171_h18_polynomial.json",
+      "payload_sha256": "40a1d15746d275aec02bbf8ae67625131ab73c0b109f79b9107ab347fa23ec53",
+      "job_type": "sample-hamiltonian",
+      "job_params": {
+        "device_type": "dirac-3",
+        "num_samples": 25,
+        "relaxation_schedule": 1,
+        "sum_constraint": 10.0
+      },
+      "num_variables": 4,
+      "degree": 2,
+      "constant_offset_local_only": 0.0,
+      "classical_reference_energy": -162702.99007655625,
+      "coefficient_resolution_audit": {
+        "pass": true,
+        "coefficient_spread": 15.601669150950038,
+        "max_abs_coefficient": 35922.87546080255,
+        "min_pairwise_distinct_separation": 1074.684290274843,
+        "required_min_pairwise_distinct_separation": 179.61437730401275
+      }
+    },
+    {
+      "id": "ieee39_hour_h19",
+      "group": "IEEE39 hourly h16-h19",
+      "evidence_class": "REGISTERED_EVIDENCE",
+      "payload": "ieee39_transmission/qci/ieee39_flagship/hdisp_c0_s171_h19_polynomial.json",
+      "payload_sha256": "5082907443ec0a2d3e927512cc401637869e3a058fd90524f98b45af1bfa8213",
+      "job_type": "sample-hamiltonian",
+      "job_params": {
+        "device_type": "dirac-3",
+        "num_samples": 25,
+        "relaxation_schedule": 1,
+        "sum_constraint": 10.0
+      },
+      "num_variables": 3,
+      "degree": 2,
+      "constant_offset_local_only": 0.0,
+      "classical_reference_energy": -156780.35617075002,
+      "coefficient_resolution_audit": {
+        "pass": true,
+        "coefficient_spread": 15.122298915566525,
+        "max_abs_coefficient": 32175.442523774633,
+        "min_pairwise_distinct_separation": 1033.0806836564116,
+        "required_min_pairwise_distinct_separation": 160.87721261887316
+      }
+    },
+    {
+      "id": "ieee39_window_h16_h19",
+      "group": "IEEE39 4-hour window",
+      "evidence_class": "REGISTERED_EVIDENCE",
+      "payload": "ieee39_transmission/qci/ieee39_flagship/wdisp_c0_s171_w16_polynomial.json",
+      "payload_sha256": "d6337b990fa4db83ddfa53264031644f2051d8384ead92ba4d4c4149f2c3a02c",
+      "job_type": "sample-hamiltonian",
+      "job_params": {
+        "device_type": "dirac-3",
+        "num_samples": 25,
+        "relaxation_schedule": 1,
+        "sum_constraint": 40.0
+      },
+      "num_variables": 13,
+      "degree": 2,
+      "constant_offset_local_only": 0.0,
+      "classical_reference_energy": null,
+      "coefficient_resolution_audit": {
+        "pass": true,
+        "coefficient_spread": 14.823999594032038,
+        "max_abs_coefficient": 32822.900223299795,
+        "min_pairwise_distinct_separation": 1053.869085940849,
+        "required_min_pairwise_distinct_separation": 164.11450111649899
+      }
+    },
+    {
+      "id": "ieee39_cubic_resolution_probe",
+      "group": "IEEE39 coefficient-resolution probe",
+      "evidence_class": "CHARACTERIZATION_OUTSIDE_COEFFICIENT_GUIDANCE",
+      "payload": "ieee39_transmission/qci/ieee39_flagship/dispatch_c0_s171_polynomial.json",
+      "payload_sha256": "165a407284da2e6b0740f88029a89999064d2d26f64454a28b5c57891397f1be",
+      "job_type": "sample-hamiltonian",
+      "job_params": {
+        "device_type": "dirac-3",
+        "num_samples": 25,
+        "relaxation_schedule": 1,
+        "sum_constraint": 121.0
+      },
+      "num_variables": 121,
+      "degree": 3,
+      "constant_offset_local_only": 1877534383363.3335,
+      "classical_reference_energy": null,
+      "coefficient_resolution_audit": {
+        "pass": false,
+        "coefficient_spread": 522443923.71459746,
+        "max_abs_coefficient": 284470716462.5983,
+        "min_pairwise_distinct_separation": 4599.970400306252,
+        "required_min_pairwise_distinct_separation": 1422353582.3129916
+      }
+    },
+    {
+      "id": "ieee33_stage1_balanced",
+      "group": "IEEE33 Stages 1-2",
+      "evidence_class": "REGISTERED_EVIDENCE",
+      "payload": "ieee33_feeder/qci_payloads/stage1_balanced_critical_design.json",
+      "payload_sha256": "4330ba484a9c866e728426e98a624422db429c8d543cb0be4fae8dc0c6b9a5e8",
+      "job_type": "sample-hamiltonian-integer",
+      "job_params": {
+        "device_type": "dirac-3",
+        "num_samples": 25,
+        "relaxation_schedule": 1,
+        "num_levels": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "num_variables": 11,
+      "degree": 2,
+      "constant_offset_local_only": 5737200.0,
+      "classical_reference_energy": 1441200.0,
+      "coefficient_resolution_audit": {
+        "pass": true,
+        "coefficient_spread": 32.57142857142857,
+        "max_abs_coefficient": 2553600.0,
+        "min_pairwise_distinct_separation": 184000.0,
+        "required_min_pairwise_distinct_separation": 12768.0
+      }
+    },
+    {
+      "id": "ieee33_stage2_balanced_compound",
+      "group": "IEEE33 Stages 1-2",
+      "evidence_class": "REGISTERED_EVIDENCE",
+      "payload": "ieee33_feeder/qci_payloads/stage2_balanced_critical_compound_two_lateral_fault.json",
+      "payload_sha256": "1866cb577bc7154eabebaa9eb3dee35853ad82929fffa86402efa5cc20aea721",
+      "job_type": "sample-hamiltonian-integer",
+      "job_params": {
+        "device_type": "dirac-3",
+        "num_samples": 25,
+        "relaxation_schedule": 1,
+        "num_levels": [
+          2,
+          2,
+          2
+        ]
+      },
+      "num_variables": 3,
+      "degree": 2,
+      "constant_offset_local_only": 0.0,
+      "classical_reference_energy": -52850.0,
+      "coefficient_resolution_audit": {
+        "pass": true,
+        "coefficient_spread": 9.82857142857143,
+        "max_abs_coefficient": 34400.0,
+        "min_pairwise_distinct_separation": 11449.999999999998,
+        "required_min_pairwise_distinct_separation": 172.0
+      }
+    },
+    {
+      "id": "ieee33_stage3b_balanced_cubic",
+      "group": "IEEE33 matched Stage 3",
+      "evidence_class": "REGISTERED_EVIDENCE",
+      "payload": "ieee33_feeder/qci_payloads/stage3b_balanced_critical_upstream_PCC_outage_MG_lateral_22_24.json",
+      "payload_sha256": "d8993d97e738a87a4e41ffaaa41cff967cb913434918af386aa72d65e6be5bee",
+      "job_type": "sample-hamiltonian-integer",
+      "job_params": {
+        "device_type": "dirac-3",
+        "num_samples": 25,
+        "relaxation_schedule": 1,
+        "num_levels": [
+          3
+        ]
+      },
+      "num_variables": 1,
+      "degree": 3,
+      "constant_offset_local_only": 450.578552,
+      "classical_reference_energy": 386.78191599999997,
+      "coefficient_resolution_audit": {
+        "pass": true,
+        "coefficient_spread": 151.62866062137658,
+        "max_abs_coefficient": 126.48074400000002,
+        "min_pairwise_distinct_separation": 64.35240399999999,
+        "required_min_pairwise_distinct_separation": 0.6324037200000001
+      }
+    },
+    {
+      "id": "ieee33_stage3s_balanced_continuous",
+      "group": "IEEE33 matched Stage 3",
+      "evidence_class": "REGISTERED_EVIDENCE",
+      "payload": "ieee33_feeder/qci_payloads/stage3s_balanced_critical_upstream_PCC_outage_MG_lateral_22_24.json",
+      "payload_sha256": "49e9336d0d76f175a942502b21d5fa95087d9a96ff93b46fe469c418582b62f5",
+      "job_type": "sample-hamiltonian",
+      "job_params": {
+        "device_type": "dirac-3",
+        "num_samples": 25,
+        "relaxation_schedule": 1,
+        "sum_constraint": 1.0
+      },
+      "num_variables": 2,
+      "degree": 3,
+      "constant_offset_local_only": 0.0,
+      "classical_reference_energy": 386.7663857047915,
+      "coefficient_resolution_audit": {
+        "pass": true,
+        "coefficient_spread": 6.102182654385221,
+        "max_abs_coefficient": 353.40000000000003,
+        "min_pairwise_distinct_separation": 22.521996,
+        "required_min_pairwise_distinct_separation": 1.7670000000000001
+      }
+    }
+  ],
+  "protocol_sha256": "0c97a069f187aa4627458c8a59b9add1673083404cf1a496863ab8294b20a09f"
+}

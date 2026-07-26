@@ -1,0 +1,23 @@
+{
+  "id": "ieee39_hour_h19",
+  "job_id": "6a6101da08442f441bbb27a8",
+  "submitted_utc": "2026-07-22T17:46:02.348541+00:00",
+  "protocol_sha256": "0c97a069f187aa4627458c8a59b9add1673083404cf1a496863ab8294b20a09f",
+  "evidence_class": "REGISTERED_EVIDENCE",
+  "payload": "ieee39_transmission/qci/ieee39_flagship/hdisp_c0_s171_h19_polynomial.json",
+  "payload_sha256": "5082907443ec0a2d3e927512cc401637869e3a058fd90524f98b45af1bfa8213",
+  "job_type": "sample-hamiltonian",
+  "job_params": {
+    "device_type": "dirac-3",
+    "num_samples": 25,
+    "relaxation_schedule": 1,
+    "sum_constraint": 10.0
+  },
+  "allocation_before": {
+    "seconds": 259200.0,
+    "metered": false
+  },
+  "remote_submission_response": {
+    "job_id": "6a6101da08442f441bbb27a8"
+  }
+}

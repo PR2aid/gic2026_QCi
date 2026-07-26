@@ -1,0 +1,152 @@
+{
+  "job_info": {
+    "job_id": "6a61035808442f441bbb27ae",
+    "job_submission": {
+      "job_name": "qpr_phase3_ieee33_stage3s_balanced_continuous",
+      "job_tags": [
+        "GIC2026",
+        "QCI_Phase3",
+        "REGISTERED_EVIDENCE",
+        "ieee33_stage3s_balanced_continuous"
+      ],
+      "problem_config": {
+        "normalized_qudit_hamiltonian_optimization": {
+          "polynomial_file_id": "6a610358ff2f309fb9d07218"
+        }
+      },
+      "device_config": {
+        "dirac-3_normalized_qudit": {
+          "num_samples": 25,
+          "relaxation_schedule": 1,
+          "sum_constraint": 1
+        }
+      }
+    },
+    "job_status": {
+      "submitted_at_rfc3339nano": "2026-07-22T17:52:24.798Z",
+      "queued_at_rfc3339nano": "2026-07-22T17:52:24.799Z",
+      "running_at_rfc3339nano": "2026-07-22T17:52:25.108Z",
+      "completed_at_rfc3339nano": "2026-07-22T17:52:30.266Z"
+    },
+    "job_result": {
+      "file_id": "6a61035eff2f309fb9d0721a",
+      "device_usage_s": 4
+    }
+  },
+  "status": "COMPLETED",
+  "results": {
+    "counts": [
+      1,
+      4,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      9,
+      1,
+      1
+    ],
+    "energies": [
+      386.7810059,
+      386.7810364,
+      386.7810364,
+      386.7820435,
+      386.786499,
+      386.7905273,
+      386.7905273,
+      386.7905273,
+      386.7908325,
+      386.7908325,
+      386.790863,
+      386.790863,
+      386.7908936
+    ],
+    "solutions": [
+      [
+        0.677154,
+        0.322846
+      ],
+      [
+        0.6771538,
+        0.3228462
+      ],
+      [
+        0.6771538,
+        0.3228461
+      ],
+      [
+        0.6773282,
+        0.3226718
+      ],
+      [
+        0.6780425,
+        0.3219575
+      ],
+      [
+        0.6786204,
+        0.3213796
+      ],
+      [
+        0.6786205,
+        0.3213795
+      ],
+      [
+        0.6786205,
+        0.3213796
+      ],
+      [
+        0.6786663,
+        0.3213336
+      ],
+      [
+        0.6786656,
+        0.3213343
+      ],
+      [
+        0.6786664,
+        0.3213336
+      ],
+      [
+        0.6786666,
+        0.3213334
+      ],
+      [
+        0.6786663,
+        0.3213338
+      ]
+    ]
+  },
+  "_local_submission_record": {
+    "id": "ieee33_stage3s_balanced_continuous",
+    "job_id": "6a61035808442f441bbb27ae",
+    "submitted_utc": "2026-07-22T17:52:24.839570+00:00",
+    "protocol_sha256": "0c97a069f187aa4627458c8a59b9add1673083404cf1a496863ab8294b20a09f",
+    "evidence_class": "REGISTERED_EVIDENCE",
+    "payload": "ieee33_feeder/qci_payloads/stage3s_balanced_critical_upstream_PCC_outage_MG_lateral_22_24.json",
+    "payload_sha256": "49e9336d0d76f175a942502b21d5fa95087d9a96ff93b46fe469c418582b62f5",
+    "job_type": "sample-hamiltonian",
+    "job_params": {
+      "device_type": "dirac-3",
+      "num_samples": 25,
+      "relaxation_schedule": 1,
+      "sum_constraint": 1.0
+    },
+    "allocation_before": {
+      "seconds": 259200.0,
+      "metered": false
+    },
+    "remote_submission_response": {
+      "job_id": "6a61035808442f441bbb27ae"
+    },
+    "collected_utc": "2026-07-22T17:52:35.637594+00:00",
+    "allocation_after": {
+      "seconds": 259200.0,
+      "metered": false
+    },
+    "wait_timed_out": false
+  }
+}

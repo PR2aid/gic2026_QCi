@@ -1,0 +1,5 @@
+case,payload_family,jobs,variables_min,variables_max,polynomial_degree,terms_min,terms_max,samples_per_job,relaxation_schedule,hard_device_envelope_pass,coefficient_resolution_pass,evidence_role
+case39,selection,1,14,14,2,56,56,25,1,True,False,local_exact_only
+case39,hourly_dispatch,4,3,4,2,4,6,25,1,True,True,registered_evidence
+case39,window_dispatch,1,13,13,2,24,24,25,1,True,True,registered_evidence
+case39,probe_24h_cubic,1,121,121,3,1632,1632,25,1,True,False,characterisation_only

@@ -1,0 +1,23 @@
+{
+  "id": "ieee33_stage3s_balanced_continuous",
+  "job_id": "6a61035808442f441bbb27ae",
+  "submitted_utc": "2026-07-22T17:52:24.839570+00:00",
+  "protocol_sha256": "0c97a069f187aa4627458c8a59b9add1673083404cf1a496863ab8294b20a09f",
+  "evidence_class": "REGISTERED_EVIDENCE",
+  "payload": "ieee33_feeder/qci_payloads/stage3s_balanced_critical_upstream_PCC_outage_MG_lateral_22_24.json",
+  "payload_sha256": "49e9336d0d76f175a942502b21d5fa95087d9a96ff93b46fe469c418582b62f5",
+  "job_type": "sample-hamiltonian",
+  "job_params": {
+    "device_type": "dirac-3",
+    "num_samples": 25,
+    "relaxation_schedule": 1,
+    "sum_constraint": 1.0
+  },
+  "allocation_before": {
+    "seconds": 259200.0,
+    "metered": false
+  },
+  "remote_submission_response": {
+    "job_id": "6a61035808442f441bbb27ae"
+  }
+}

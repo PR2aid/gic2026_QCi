@@ -1,0 +1,89 @@
+{
+  "job_info": {
+    "job_id": "6a61032d08442f441bbb27ac",
+    "job_submission": {
+      "job_name": "qpr_phase3_ieee33_stage2_balanced_compound",
+      "job_tags": [
+        "GIC2026",
+        "QCI_Phase3",
+        "REGISTERED_EVIDENCE",
+        "ieee33_stage2_balanced_compound"
+      ],
+      "problem_config": {
+        "qudit_hamiltonian_optimization": {
+          "polynomial_file_id": "6a61032dff2f309fb9d07210"
+        }
+      },
+      "device_config": {
+        "dirac-3_qudit": {
+          "num_levels": [
+            2,
+            2,
+            2
+          ],
+          "num_samples": 25,
+          "relaxation_schedule": 1
+        }
+      }
+    },
+    "job_status": {
+      "submitted_at_rfc3339nano": "2026-07-22T17:51:41.386Z",
+      "queued_at_rfc3339nano": "2026-07-22T17:51:41.386Z",
+      "running_at_rfc3339nano": "2026-07-22T17:51:41.578Z",
+      "completed_at_rfc3339nano": "2026-07-22T17:51:55.418Z"
+    },
+    "job_result": {
+      "file_id": "6a61033bff2f309fb9d07212",
+      "device_usage_s": 4
+    }
+  },
+  "status": "COMPLETED",
+  "results": {
+    "counts": [
+      25
+    ],
+    "energies": [
+      -52850
+    ],
+    "solutions": [
+      [
+        1,
+        1,
+        1
+      ]
+    ]
+  },
+  "_local_submission_record": {
+    "id": "ieee33_stage2_balanced_compound",
+    "job_id": "6a61032d08442f441bbb27ac",
+    "submitted_utc": "2026-07-22T17:51:41.426933+00:00",
+    "protocol_sha256": "0c97a069f187aa4627458c8a59b9add1673083404cf1a496863ab8294b20a09f",
+    "evidence_class": "REGISTERED_EVIDENCE",
+    "payload": "ieee33_feeder/qci_payloads/stage2_balanced_critical_compound_two_lateral_fault.json",
+    "payload_sha256": "1866cb577bc7154eabebaa9eb3dee35853ad82929fffa86402efa5cc20aea721",
+    "job_type": "sample-hamiltonian-integer",
+    "job_params": {
+      "device_type": "dirac-3",
+      "num_samples": 25,
+      "relaxation_schedule": 1,
+      "num_levels": [
+        2,
+        2,
+        2
+      ]
+    },
+    "allocation_before": {
+      "seconds": 259200.0,
+      "metered": false
+    },
+    "remote_submission_response": {
+      "job_id": "6a61032d08442f441bbb27ac"
+    },
+    "collected_utc": "2026-07-22T17:52:02.530933+00:00",
+    "allocation_after": {
+      "seconds": 259200.0,
+      "metered": false
+    },
+    "wait_timed_out": false
+  }
+}

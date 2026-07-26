@@ -1,0 +1,144 @@
+{
+  "all_checks_passed": true,
+  "checks_passed": 39,
+  "checks_total": 39,
+  "ieee33": {
+    "ac_screen_pass": true,
+    "chronology_case_count": 96,
+    "pareto": {
+      "balanced_critical": {
+        "annualized_cost_usd_per_year": "1315200.0",
+        "audit_set_critical_unserved_mwh": "1.6800000000000006",
+        "compound_critical_fraction_served": "0.7999999999999999",
+        "compound_customer_fraction_served": "0.75",
+        "critical_unserved_pocket_hours": "8.0",
+        "design_label": "Plan B - Balanced-critical",
+        "design_mode": "balanced_critical",
+        "expected_annual_critical_unserved_mwh": "4.200000000000001",
+        "risk_value_beta_usd_per_mwh": "30000.0",
+        "selected_blackstart_overlaps": "1",
+        "upfront_cost_usd": "16440000.0",
+        "worst_customer_block_fraction_unserved": "0.25",
+        "worst_load_fraction_unserved_sensitivity": "0.2476446837146703"
+      },
+      "cost_efficient": {
+        "annualized_cost_usd_per_year": "1073600.0",
+        "audit_set_critical_unserved_mwh": "8.4",
+        "compound_critical_fraction_served": "0.0",
+        "compound_customer_fraction_served": "0.65625",
+        "critical_unserved_pocket_hours": "16.0",
+        "design_label": "Plan A - Cost-efficient",
+        "design_mode": "cost_efficient",
+        "expected_annual_critical_unserved_mwh": "21.000000000000004",
+        "risk_value_beta_usd_per_mwh": "0.0",
+        "selected_blackstart_overlaps": "0",
+        "upfront_cost_usd": "13420000.0",
+        "worst_customer_block_fraction_unserved": "0.34375",
+        "worst_load_fraction_unserved_sensitivity": "0.4979811574697174"
+      },
+      "robust_critical": {
+        "annualized_cost_usd_per_year": "1556800.0",
+        "audit_set_critical_unserved_mwh": "0.0",
+        "compound_critical_fraction_served": "1.0",
+        "compound_customer_fraction_served": "1.0",
+        "critical_unserved_pocket_hours": "0",
+        "design_label": "Plan C - Robust-critical",
+        "design_mode": "robust_critical",
+        "expected_annual_critical_unserved_mwh": "0.0",
+        "risk_value_beta_usd_per_mwh": "75000.0",
+        "selected_blackstart_overlaps": "2",
+        "upfront_cost_usd": "19460000.0",
+        "worst_customer_block_fraction_unserved": "0.0",
+        "worst_load_fraction_unserved_sensitivity": "0.0"
+      }
+    },
+    "payload_count": 27
+  },
+  "ieee39": {
+    "probe_resolution_audit": {
+      "coefficient_spread": 522443923.71459746,
+      "min_distinct_separation": 4599.970400306252,
+      "pass": false,
+      "required_min_separation": 1422353582.3129916
+    },
+    "registered_dispatch_resolution_audits": [
+      {
+        "coefficient_spread": 15.726439318932565,
+        "min_distinct_separation": 993.3942824134756,
+        "pass": true,
+        "required_min_separation": 154.69702000483605
+      },
+      {
+        "coefficient_spread": 14.019846844797042,
+        "min_distinct_separation": 1114.317087418669,
+        "pass": true,
+        "required_min_separation": 173.52780846023353
+      },
+      {
+        "coefficient_spread": 15.601669150950038,
+        "min_distinct_separation": 1074.684290274843,
+        "pass": true,
+        "required_min_separation": 179.61437730401275
+      },
+      {
+        "coefficient_spread": 15.122298915566525,
+        "min_distinct_separation": 1033.0806836564116,
+        "pass": true,
+        "required_min_separation": 160.87721261887316
+      },
+      {
+        "coefficient_spread": 14.823999594032038,
+        "min_distinct_separation": 1053.869085940849,
+        "pass": true,
+        "required_min_separation": 164.11450111649899
+      }
+    ],
+    "with_islanding": {
+      "expected_critical_outage_hours": 0.0,
+      "expected_energy_component_$": 5464021.84,
+      "expected_operating_cost_$": 5537173.34,
+      "expected_reliability_voll_component_$": 73151.5,
+      "expected_total_annual_cost_$": 2242302119.1,
+      "expected_total_annual_saving_$": 243701945.5,
+      "expected_total_annual_saving_fraction": 0.0980295844927397,
+      "max_fraction_unserved_per_hour": 1.0,
+      "max_local_fraction_unserved_per_hour": 1.0,
+      "max_system_fraction_unserved_per_hour": 0.0672,
+      "n_scenarios": 15,
+      "portfolio_candidates": [
+        0,
+        3
+      ],
+      "portfolio_load_bus_coverage_ratio": 0.19047619047619047,
+      "portfolio_load_mw_coverage_ratio": 0.27311115836801647,
+      "scenario_probability_sum": 1.0,
+      "upgrade_cost_annualised_$": 221233850.0
+    },
+    "without_islanding": {
+      "expected_critical_outage_hours": 0.08,
+      "expected_energy_component_$": 5458798.54,
+      "expected_operating_cost_$": 6810970.04,
+      "expected_reliability_voll_component_$": 1352171.5,
+      "expected_total_annual_cost_$": 2486004064.6,
+      "max_fraction_unserved_per_hour": 1.0,
+      "max_local_fraction_unserved_per_hour": 1.0,
+      "max_system_fraction_unserved_per_hour": 0.1932,
+      "n_scenarios": 15,
+      "scenario_probability_sum": 1.0,
+      "upgrade_cost_annualised_$": 0.0
+    }
+  },
+  "live_evidence": {
+    "campaign_counted_samples": 250,
+    "campaign_device_usage_s": 320.0,
+    "campaign_elapsed_wall_s_from_receipts": 427.613396,
+    "campaign_raw_machine_feasible_samples": 250,
+    "ieee39_hourly_counted_samples": 100,
+    "ieee39_hourly_raw_cap_feasible_samples": 72,
+    "physical_decode_analysis_complete": true,
+    "protocol_sha256": "0c97a069f187aa4627458c8a59b9add1673083404cf1a496863ab8294b20a09f",
+    "strict_audit_pass": true
+  },
+  "python": "3.12.13 (main, Mar  3 2026, 14:59:34) [Clang 21.1.4 ]",
+  "wall_seconds": 6.2
+}
