@@ -12,7 +12,7 @@ Optimization in Resilient Power Grids*
 
 https://github.com/PR2aid/gic2026_QCi
 
-The best way is to download this package locally, then  package to qBrain then run the bellow commants:
+The best way is to download this package from Github, then upload to qBrain and run the bellow commants:
 
 ### To run locally
 
