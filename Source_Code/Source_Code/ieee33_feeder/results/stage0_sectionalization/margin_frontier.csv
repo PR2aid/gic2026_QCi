@@ -1,5 +1,0 @@
-rho_from,rho_to,unconstrained_optimal_upfront_cost_usd,unconstrained_num_sections,unconstrained_min_headroom_fraction,unconstrained_section_loads_mw,policy_optimal_upfront_cost_usd,policy_optimal_structure,policy_num_sections,price_of_policy_usd
-0.0,0.0116,10640000.0,3,0.011685,"[1.865, 0.93, 0.92]",10640000.0,three_sections_TA_B_C,3,0.0
-0.0117,0.0144,12940000.0,3,0.078167,"[1.48, 1.36, 0.875]",13420000.0,four_sections_T_A_B_C,4,480000.0
-0.0145,0.0254,12940000.0,3,0.078167,"[1.48, 1.36, 0.875]",15720000.0,four_sections_T_A_B_C,4,2780000.0
-0.0255,0.12,12940000.0,3,0.078167,"[1.48, 1.36, 0.875]",18020000.0,four_sections_T_A_B_C,4,5080000.0

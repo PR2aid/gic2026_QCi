@@ -1,2 +1,0 @@
-# Integrated package dependency source of truth:
--r ../requirements.txt

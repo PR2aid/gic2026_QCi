@@ -1,4 +1,0 @@
-design_mode,design_label,risk_value_beta_usd_per_mwh,upfront_cost_usd,annualized_cost_usd_per_year,selected_blackstart_overlaps,worst_customer_block_fraction_unserved,worst_load_fraction_unserved_sensitivity,audit_set_critical_unserved_mwh,expected_annual_critical_unserved_mwh,critical_unserved_pocket_hours,compound_customer_fraction_served,compound_critical_fraction_served
-cost_efficient,Plan A - Cost-efficient,0.0,13420000.0,1073600.0,0,0.34375,0.4979811574697174,8.4,21.000000000000004,16.0,0.65625,0.0
-balanced_critical,Plan B - Balanced-critical,30000.0,16440000.0,1315200.0,1,0.25,0.2476446837146703,1.6800000000000006,4.200000000000001,8.0,0.75,0.7999999999999999
-robust_critical,Plan C - Robust-critical,75000.0,19460000.0,1556800.0,2,0.0,0.0,0.0,0.0,0,1.0,1.0

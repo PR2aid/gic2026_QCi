@@ -6,18 +6,24 @@
 - **Submission archive:** `QuantumPatternRecognition_QCI_Phase3.zip`
 - **Repository:** <https://github.com/PR2aid/gic2026_QCi>
 
+This release contains the public IEEE-33 and IEEE-39 studies, matched classical
+baselines, grid simulations, guarded QCi Dirac-3 payloads, unchanged archived
+hardware responses, and deterministic fail-closed audits.
 
-This public repository is created as part of Global Industrial Challenge phase 3 submission, 
-and is a propetry of the the provisional pattent owners (who are not limitted to the named participants in the attached QuantumPatternRecognition__Phase3_Version14.pdf).
-The supplied implementation and evidence are limited to the files in this
-archive and are sufficient for the credential-free reproduction described
-below.
+## Judge quick start
 
-Certain subject matter in and related to this submission is disclosed in
-pending Australian provisional patent applications and their related publication (referenced in the QuantumPatternRecognition__Phase3_Version14.pdf). 
-For enquiries about a licence concerning rights not already
-granted under the competition instruments, contact <admin@pr2aid.com> or
-<azadeh.alavi@rmit.edu.au>.
+1. Use the **Launch on qBraid** button below. Do not upload or unzip the
+   submission archive when using this route.
+2. When qBraid opens `Source_Code/RUN_ON_QBRAID.ipynb`, select **Run → Run All
+   Cells** (or **Kernel → Restart Kernel and Run All Cells**). Do not start with
+   an individual middle cell.
+3. Accept the reproduction only if the first gate reports `RELEASE MANIFEST:
+   PASS 140/140 files`, the complete nine-line summary is printed, and
+   `Source_Code/results/reproduction_acceptance.json` reports `"status":
+   "PASS"`.
+
+Archived hardware re-scoring is credential-free. A new stochastic QCi run is
+optional, allocation-dependent, and not part of the acceptance path.
 
 ## Repository availability and Launch on qBraid
 
@@ -47,6 +53,27 @@ The PDF is the only submitted write-up. Supporting verifier inputs are included
 under `Source_Code/`. The source is supplied for competition evaluation under
 `Source_Code/LICENSE`; no general public software licence is granted.
 
+### Intellectual-property and licensing boundary
+
+The supplied implementation and evidence are limited to the files in this
+archive and are sufficient for the credential-free reproduction described
+below. Citations identify external public literature only; omitted background
+software, confidential know-how, and other unsubmitted implementation material
+are not supplied by this release.
+
+Rights in material included in the submission are governed by the applicable
+Global Industry Challenge rules, participant agreement, and Aqora terms. This
+notice does not limit, replace, or modify those rights. Apart from those rights
+and applicable third-party licences, no additional public software or patent
+licence is granted; see `Source_Code/LICENSE`.
+
+Certain subject matter in and related to this submission is disclosed in
+Australian Provisional Patent Application No. 2026906569 and other pending
+Australian provisional patent applications; no granted patent is claimed. For
+enquiries about a separate licence concerning rights not already granted under
+the competition instruments, contact <admin@pr2aid.com> or
+<azadeh.alavi@rmit.edu.au>.
+
 ## 2. Credential-free reproduction on qBraid
 
 **Path convention:** every archive path and command below uses the qBraid/Linux
@@ -59,7 +86,7 @@ section expressly says otherwise.
 2. Upload `QuantumPatternRecognition_QCI_Phase3.zip`.
 3. In qBraid's Linux terminal, run the commands below.
 4. Open `~/QCI_P3/Source_Code/RUN_ON_QBRAID.ipynb`.
-5. Run all cells from top to bottom.
+5. Select **Run → Run All Cells**. Do not run an individual middle cell first.
 
 From the directory containing the uploaded ZIP, use a new extraction directory.
 The commands below require `~/QCI_P3` not to exist; if it does, replace
@@ -81,7 +108,8 @@ ZIP into a new empty directory before checking release integrity again.
 
 1. Select the Launch button above after the repository is public.
 2. qBraid opens `Source_Code/RUN_ON_QBRAID.ipynb`.
-3. Run all cells from top to bottom.
+3. Select **Run → Run All Cells**. Do not upload or unzip the submission ZIP
+   for this route, and do not run an individual middle cell first.
 
 The notebook works when qBraid starts in either the repository root or
 `Source_Code/`. It first verifies the untouched release manifest, then creates
