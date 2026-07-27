@@ -19,16 +19,6 @@ For enquiries about a licence concerning rights not already
 granted under the competition instruments, contact <admin@pr2aid.com> or
 <azadeh.alavi@rmit.edu.au>.
 
-## Quick start
-
-1. Launch the repository on qBraid or upload and extract the submission ZIP.
-2. Open `Source_Code/RUN_ON_QBRAID.ipynb` and run every cell from top to bottom.
-3. Accept the reproduction only if the initial release-manifest gate and every
-   scientific, evidence, figure, and manuscript gate report `PASS`.
-
-Archived hardware re-scoring is credential-free. A new stochastic QCi run is
-optional, allocation-dependent, and not part of the acceptance path.
-
 ## Repository availability and Launch on qBraid
 
 The Launch button targets the repository identified above. Public, sign-in-free
