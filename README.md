@@ -8,7 +8,9 @@ Optimization in Resilient Power Grids*
 
 **Team:** Quantum Pattern Recognition
 
-##  reproduction — one route
+##  reproduction 
+
+https://github.com/PR2aid/gic2026_QCi
 
 The best way is to download this package locally, then  package to qBrain then run the bellow commants:
 
@@ -28,7 +30,7 @@ python run_all_local.py
 
 ```
 
-then the resukt can be seen both on the screen and is saved in Source_Code/results_summary.json
+then the result can be seen both on the screen and is saved in Source_Code/results_summary.json
 It also regenerates and saves detailed JSON/CSV results inside:
 
 ieee39_transmission/results/
