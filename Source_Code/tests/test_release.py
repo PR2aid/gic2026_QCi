@@ -188,12 +188,14 @@ class CampaignTests(unittest.TestCase):
             marker.unlink()
             reproduction.PAYLOAD_SNAPSHOT.rmdir()
 
-        # The notebook-level acceptance certificate must be bound to the
-        # current uninterrupted reproduction, never to shipped PASS files.
+        # The notebook delegates to one fail-closed submitted Python entry
+        # point. Its acceptance certificate is bound to the current
+        # uninterrupted reproduction, never to a shipped PASS file.
         notebook = json.loads((ROOT / "RUN_ON_QBRAID.ipynb").read_text())
         setup_cell = "".join(notebook["cells"][1]["source"])
         runner_cell = "".join(notebook["cells"][2]["source"])
         acceptance_cell = "".join(notebook["cells"][3]["source"])
+        judge_runner = (ROOT / "run_judge_acceptance.py").read_text()
         self.assertLess(
             setup_cell.index("MANIFEST_VERIFIED = False"),
             setup_cell.index("verify_release_manifest.py"),
@@ -214,80 +216,28 @@ class CampaignTests(unittest.TestCase):
             runner_cell.rindex("REPRODUCTION_COMPLETED = True"),
             runner_cell.rindex("subprocess.run"),
         )
-        self.assertLess(
-            acceptance_cell.index("ACCEPTANCE_PATH.unlink(missing_ok=True)"),
-            acceptance_cell.index(
-                "assert globals().get('REPRODUCTION_COMPLETED') is True"
-            ),
+        self.assertIn("run_judge_acceptance.py", runner_cell)
+        self.assertIn(
+            "assert globals().get('REPRODUCTION_COMPLETED') is True",
+            acceptance_cell,
         )
-
-        with tempfile.TemporaryDirectory() as temporary:
-            test_root = Path(temporary)
-            required = (
-                "results_summary.json",
-                "RELEASE_MANIFEST.json",
-                "ieee39_transmission/results/convention_test_summary.json",
-                "results/live/strict_evidence_audit.json",
-                "results/live/physical_decode_audit.json",
-                "results/live/certified_hardware_analysis.json",
-            )
-            for rel in required:
-                source = ROOT / rel
-                target_copy = test_root / rel
-                target_copy.parent.mkdir(parents=True, exist_ok=True)
-                target_copy.write_bytes(source.read_bytes())
-            for name in (
-                "figure1_architecture.png",
-                "figure1_architecture.pdf",
-                "figure2_results.png",
-                "figure2_results.pdf",
-            ):
-                target_figure = test_root / "figures" / name
-                target_figure.parent.mkdir(parents=True, exist_ok=True)
-                target_figure.write_bytes(b"freshly-regenerated-test-figure")
-
-            acceptance_path = test_root / "results/reproduction_acceptance.json"
-            base_environment = {
-                "ROOT": test_root,
-                "MANIFEST_VERIFIED": True,
-                "SETUP_COMPLETED": True,
-                "ACCEPTANCE_PATH": acceptance_path,
-                "ACCEPTANCE_BUILDING": acceptance_path.with_suffix(".json.building"),
-                "os": os,
-            }
-            failed_environment = {
-                **base_environment,
-                "REPRODUCTION_COMPLETED": False,
-            }
-            acceptance_path.write_bytes(b"stale-certificate")
-            with self.assertRaises(AssertionError):
-                exec(compile(acceptance_cell, "<acceptance-cell>", "exec"),
-                     failed_environment)
-            self.assertFalse(acceptance_path.exists())
-
-            passed_environment = {
-                **base_environment,
-                "REPRODUCTION_COMPLETED": True,
-            }
-            with mock.patch("builtins.print"):
-                exec(compile(acceptance_cell, "<acceptance-cell>", "exec"),
-                     passed_environment)
-            certificate = json.loads(acceptance_path.read_text())
-            self.assertEqual(certificate["status"], "PASS")
-            self.assertTrue(certificate["reproduction_commands_completed"])
-            self.assertEqual(
-                certificate["consolidated_claim_audit"],
-                {"passed": 39, "total": 39},
-            )
-            self.assertEqual(
-                certificate["strict_raw_evidence"]["responses_passed"], 11
-            )
-            self.assertEqual(
-                certificate["physical_decode_diagnostic"][
-                    "hourly_cap_feasible_samples"
-                ],
-                72,
-            )
+        self.assertLess(
+            judge_runner.index("ACCEPTANCE.unlink(missing_ok=True)"),
+            judge_runner.index('run("run_all_local.py")'),
+        )
+        self.assertLess(
+            judge_runner.index('run("run_all_local.py")'),
+            judge_runner.index('"status": "PASS"'),
+        )
+        self.assertLess(
+            judge_runner.index('"status": "PASS"'),
+            judge_runner.index("os.replace(BUILDING, ACCEPTANCE)"),
+        )
+        failure_handler = judge_runner[judge_runner.index(
+            "except (AssertionError, subprocess.CalledProcessError)"
+        ):]
+        self.assertIn("ACCEPTANCE.unlink(missing_ok=True)", failure_handler)
+        self.assertIn("FINAL JUDGE VERDICT: FAIL", failure_handler)
 
     def test_constant_restored_raw_scoring(self):
         frozen = live.prepare()

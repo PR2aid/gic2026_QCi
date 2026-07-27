@@ -15,9 +15,9 @@
     },
     {
       "path": "README.md",
-      "bytes": 30079,
+      "bytes": 8720,
       "mode": "0644",
-      "sha256": "144120ebb51017ddb2567f248f580274bbd30cbe5758c584f075d84cc9734f7f"
+      "sha256": "5032cc16b8105dcd4aa70514e24b79c593beb5667af44f86c428e8ce03722e74"
     },
     {
       "path": "Source_Code/.gitignore",
@@ -33,9 +33,9 @@
     },
     {
       "path": "Source_Code/RUN_ON_QBRAID.ipynb",
-      "bytes": 11513,
+      "bytes": 5654,
       "mode": "0644",
-      "sha256": "52489981945171d9290d9a9186d8877b3eee63543af0104a7c3ada81f995f757"
+      "sha256": "c34134602886008f0fd11391dfb49baf9281f14173be59e65749c017ed166b10"
     },
     {
       "path": "Source_Code/docs/Phase3_Writeup_FINAL_NO_COVER.md",
@@ -70,7 +70,7 @@
     {
       "path": "Source_Code/figures/make_figures.py",
       "bytes": 12528,
-      "mode": "0755",
+      "mode": "0644",
       "sha256": "8139c05c567a32d4f3e2ceda1aa0dfa0d6f88dc7f075e84bfae5c08360e4b7e4"
     },
     {
@@ -358,31 +358,31 @@
     {
       "path": "Source_Code/ieee33_feeder/scripts/run_ac_audit.py",
       "bytes": 10971,
-      "mode": "0755",
+      "mode": "0644",
       "sha256": "9add224b04a299feff4ab504d407a27a8fe4927ed0ef94307fd92fc21785daef"
     },
     {
       "path": "Source_Code/ieee33_feeder/scripts/run_baselines.py",
       "bytes": 7517,
-      "mode": "0755",
+      "mode": "0644",
       "sha256": "bd37bae920fdaa8930433a4d6bda4866ab4ada4936f489ec3a752acb24d4b2c8"
     },
     {
       "path": "Source_Code/ieee33_feeder/scripts/run_chronology_audit.py",
       "bytes": 29567,
-      "mode": "0755",
+      "mode": "0644",
       "sha256": "7a8b1aae87ebdb923106e4fb39e95a65d29a49c76b0b0e96b90be41f285b36ad"
     },
     {
       "path": "Source_Code/ieee33_feeder/scripts/run_pipeline.py",
       "bytes": 14197,
-      "mode": "0755",
+      "mode": "0644",
       "sha256": "c465391447fc1347458944abc57ac9c5f0b1aac5f511e864f1867c3091ec1fd2"
     },
     {
       "path": "Source_Code/ieee33_feeder/scripts/run_stage0.py",
       "bytes": 17263,
-      "mode": "0755",
+      "mode": "0644",
       "sha256": "b401871bc522ee66b543f09dd9eb6a1255c375beb7556e5d32677b2065a16637"
     },
     {
@@ -580,7 +580,7 @@
     {
       "path": "Source_Code/ieee39_transmission/scripts/summarize_resources.py",
       "bytes": 2671,
-      "mode": "0755",
+      "mode": "0644",
       "sha256": "654f666b69b66afdd217cdb23b01c6f0c1529d460997af67f57395640070db6a"
     },
     {
@@ -790,43 +790,49 @@
     {
       "path": "Source_Code/run_all_local.py",
       "bytes": 26135,
-      "mode": "0755",
+      "mode": "0644",
       "sha256": "b9cf75a1e06c0120635d8dbc62d6d0a53709444797acfd3ffd1a103d9a0c4ef3"
+    },
+    {
+      "path": "Source_Code/run_judge_acceptance.py",
+      "bytes": 6853,
+      "mode": "0755",
+      "sha256": "4ec18304935d791bc41d42558e5701e99bddc473daba69198eea6919f1516db4"
     },
     {
       "path": "Source_Code/run_judge_reproduction.py",
       "bytes": 10979,
-      "mode": "0755",
+      "mode": "0644",
       "sha256": "d9d3e43d8c8e38c05f1d47efc53468fdd9f8f7e1b16a541ad79ddf7582037ea3"
     },
     {
       "path": "Source_Code/run_live_dirac3.py",
       "bytes": 32598,
-      "mode": "0755",
+      "mode": "0644",
       "sha256": "e279b7a1655ed624f251e0592c12afc78b89a7b63a8f7bf1629d43681cbadd0f"
     },
     {
       "path": "Source_Code/scripts/audit_live_evidence.py",
       "bytes": 13102,
-      "mode": "0755",
+      "mode": "0644",
       "sha256": "7b7b0d34ad3829748fbab619b8640ad523a058d524bc2c7e28a0b5e962e8cb8f"
     },
     {
       "path": "Source_Code/scripts/audit_live_physics.py",
       "bytes": 9371,
-      "mode": "0755",
+      "mode": "0644",
       "sha256": "9dfcb22ff5f4a1a49f00f33c43894886e1a89880ebcd40bbc6744f895bc3a52e"
     },
     {
       "path": "Source_Code/scripts/certify_live_results.py",
       "bytes": 17924,
-      "mode": "0755",
+      "mode": "0644",
       "sha256": "c0dc148430a41a602c25bb4fee2ffb81f787ce1c83cf53743b965717cdb0ad17"
     },
     {
       "path": "Source_Code/scripts/integrate_live_results.py",
       "bytes": 18171,
-      "mode": "0755",
+      "mode": "0644",
       "sha256": "f28391a1ab6bb5c8832df3f72c797976b66aee7605ef5c3d5d6d1a34ccffb61a"
     },
     {
@@ -843,9 +849,9 @@
     },
     {
       "path": "Source_Code/tests/test_release.py",
-      "bytes": 20795,
+      "bytes": 18706,
       "mode": "0644",
-      "sha256": "70f98697d6fcf3dbe7a201817fbcd49dec7bdf9887f9134c4b3362bb7bd801a0"
+      "sha256": "c51036465184d6a3b13dc3ae741e27a945be995b917eff04d98b81bf1946ed69"
     }
   ]
 }
