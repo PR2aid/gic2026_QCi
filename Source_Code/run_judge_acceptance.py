@@ -25,6 +25,11 @@ RELEASE = SOURCE.parent
 ACCEPTANCE = SOURCE / "results" / "reproduction_acceptance.json"
 BUILDING = ACCEPTANCE.with_suffix(".json.building")
 
+# qBraid launches this program from Jupyter, whose inline Matplotlib backend is
+# not installed inside the isolated judge environment.  Force a headless
+# backend before any child process imports Matplotlib.
+os.environ["MPLBACKEND"] = "Agg"
+
 
 def run(relative_path: str, *arguments: str) -> None:
     """Run a submitted Python program with the current interpreter."""
