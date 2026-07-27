@@ -6,9 +6,19 @@
 - **Submission archive:** `QuantumPatternRecognition_QCI_Phase3.zip`
 - **Repository:** <https://github.com/PR2aid/gic2026_QCi>
 
-This release contains the public IEEE-33 and IEEE-39 studies, matched classical
-baselines, grid simulations, guarded QCi Dirac-3 payloads, unchanged archived
-hardware responses, and deterministic fail-closed audits.
+### Intellectual-property and licensing boundary
+
+This public repository is created as part of Global Industrial Challenge phase 3 submission, 
+and is a propetry of the the provisional pattent owners (who are not limitted to the named participants in the attached QuantumPatternRecognition__Phase3_Version14.pdf).
+The supplied implementation and evidence are limited to the files in this
+archive and are sufficient for the credential-free reproduction described
+below.
+
+Certain subject matter in and related to this submission is disclosed in
+pending Australian provisional patent applications and their related publication (referenced in the QuantumPatternRecognition__Phase3_Version14.pdf). 
+For enquiries about a licence concerning rights not already
+granted under the competition instruments, contact <admin@pr2aid.com> or
+<azadeh.alavi@rmit.edu.au>.
 
 ## Quick start
 
@@ -33,20 +43,6 @@ sufficient. The qBraid Lab compute-hour allowance is separate from any QCi
 Dirac-3 allocation or metering. No repository credential, QCi token, qBraid
 password, paid hardware call, or other secret is required for the submitted
 credential-free reproduction.
-
-### Intellectual-property and licensing boundary
-
-The supplied implementation and evidence are limited to the files in this
-archive and are sufficient for the credential-free reproduction described
-below. Citations identify external public literature only; omitted background
-software, confidential know-how, and other unsubmitted implementation material
-are not supplied by this release.
-
-Certain subject matter in and related to this submission is disclosed in
-pending Australian provisional patent applications and their related publication ( referenced in the PDF). 
-For enquiries about a licence concerning rights not already
-granted under the competition instruments, contact <admin@pr2aid.com> or
-<azadeh.alavi@rmit.edu.au>.
 
 ## 1. Submission contents
 
