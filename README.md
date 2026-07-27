@@ -53,62 +53,6 @@ export QCI_API_URL="https://api.qci-prod.com"
 
 ```
 
-The bellw botoom is going to cloan the code ( but might not work as intended - so the above steps is the reliable one hence highly recomended) 
-
-[<img src="https://qbraid-static.s3.amazonaws.com/logos/Launch_on_qBraid_white.png" width="150">](https://account.qbraid.com?gitHubUrl=https%3A%2F%2Fgithub.com%2FPR2aid%2Fgic2026_QCi.git&redirectUrl=Source_Code%2FRUN_ON_QBRAID.ipynb)
-
-1. Select **Launch on qBraid** above.
-2. Open `Source_Code/RUN_ON_QBRAID.ipynb` if it does not open automatically.
-3. Select **Run → Run All Cells**. If the notebook has been used before,
-   select **Kernel → Restart Kernel and Run All Cells**.
-4. Wait for `FINAL JUDGE VERDICT: PASS`.
-
-The notebook creates an isolated Python environment, installs the pinned
-dependencies, and calls one submitted Python entry point:
-
-```bash
-python Source_Code/run_judge_acceptance.py
-```
-
-Judges do not need to identify or run the internal programs in a particular
-order. The entry point fails immediately if any required stage fails. It makes
-no hardware call, requires no credential, and never replaces the submitted QCi
-receipts or raw responses.
-
-## What to check
-
-Accept the reproduction only when the final output contains all of the
-following:
-
-```text
-FINAL JUDGE VERDICT: PASS
-Release manifest:                PASS before reproduction
-IEEE-39 convention/invariants:   15/15
-IEEE-33 scientific tests:        10/10
-Release/evidence tests:          11/11
-Consolidated claim audit:        39/39
-Strict raw evidence:             11/11 responses
-Campaign machine-domain states:  250/250 counted samples
-Manuscript figures:              2/2 regenerated in PNG and PDF
-Evidence/manuscript verifier:    PASS
-```
-
-The authoritative machine-readable verdict is generated only after every gate
-passes:
-
-`Source_Code/results/reproduction_acceptance.json`
-
-It must contain:
-
-```json
-{
-  "status": "PASS"
-}
-```
-
-Reject the reproduction if a command exits nonzero, a traceback or failed
-assertion appears, `FINAL JUDGE VERDICT: FAIL` appears, the summary is
-incomplete, or the acceptance certificate is absent.
 
 ## Principal results
 
