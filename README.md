@@ -8,7 +8,52 @@ Optimization in Resilient Power Grids*
 
 **Team:** Quantum Pattern Recognition
 
-## Judge reproduction — one route
+##  reproduction — one route
+
+The best way is to download this package locally, then  package to qBrain then run the bellow commants:
+
+### To run locally
+
+```bash
+
+unzip gic2026_QCi-main.zip
+cd  gic2026_QCi-main
+cd Source_Code
+
+cd ~/gic2026_QCi-main/Source_Code
+
+python3 -m venv .venv-local
+source .venv-local/bin/activate
+python -m pip install -r requirements.txt
+
+python run_all_local.py
+
+```
+
+then the resukt can be seen both on the screen and is saved in Source_Code/results_summary.json
+It also regenerates and saves detailed JSON/CSV results inside:
+
+ieee39_transmission/results/
+ieee33_feeder/results/
+results/live/
+
+### To run on Quantum hardware / i.e. Dirac-3 from qBraid:
+
+```bash
+
+cd ~/gic2026_QCi-main/Source_Code
+source .venv-local/bin/activate
+python -m pip install -r requirements.txt
+
+unset QCI_TOKEN QCI_API_URL
+read -rsp "Paste the QCi portal API token: " QCI_TOKEN
+echo
+export QCI_TOKEN
+export QCI_API_URL="https://api.qci-prod.com"
+
+```
+
+The bellw botoom is going to cloan the code ( but might not work as intended - so the above steps is the reliable one hence highly recomended) 
 
 [<img src="https://qbraid-static.s3.amazonaws.com/logos/Launch_on_qBraid_white.png" width="150">](https://account.qbraid.com?gitHubUrl=https%3A%2F%2Fgithub.com%2FPR2aid%2Fgic2026_QCi.git&redirectUrl=Source_Code%2FRUN_ON_QBRAID.ipynb)
 
