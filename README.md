@@ -17,8 +17,6 @@ The best way is to download this package locally, then  package to qBrain then r
 ```bash
 
 unzip gic2026_QCi-main.zip
-cd  gic2026_QCi-main
-cd Source_Code
 
 cd ~/gic2026_QCi-main/Source_Code
 
