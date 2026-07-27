@@ -6,7 +6,6 @@
 - **Submission archive:** `QuantumPatternRecognition_QCI_Phase3.zip`
 - **Repository:** <https://github.com/PR2aid/gic2026_QCi>
 
-### Intellectual-property and licensing boundary
 
 This public repository is created as part of Global Industrial Challenge phase 3 submission, 
 and is a propetry of the the provisional pattent owners (who are not limitted to the named participants in the attached QuantumPatternRecognition__Phase3_Version14.pdf).
